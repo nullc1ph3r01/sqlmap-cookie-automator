@@ -84,13 +84,3 @@ python3 sqlmap_cookie_automator.py \
   --sqlmap /path/to/sqlmap \
   -- -r target.req --batch
 ```
-
-## Local demo app
-
-`demo_cookie_refresh_app.py` is an intentionally vulnerable local fixture with a sample SQLite database, a login page, a short-lived session cookie, and `/metrics` for observing session generations. It binds to loopback by default:
-
-```bash
-python3 demo_cookie_refresh_app.py --host 127.0.0.1 --port 8766
-```
-
-Demo credentials are `demo` / `demo-pass`; the vulnerable endpoint is `/item?id=1`. Use this fixture only for local practice. Its SQL query is deliberately unsafe.
