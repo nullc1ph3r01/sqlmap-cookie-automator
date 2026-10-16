@@ -18,7 +18,6 @@ The login request and sqlmap target request are separate: `login.req` authentica
 - Python 3.10 or newer
 - sqlmap installed and available as `sqlmap` on `PATH`, or specify its executable with `--sqlmap`
 - A raw HTTP login request saved as `login.req`
-- Authorization to test the target
 
 ## Prepare the login request
 
